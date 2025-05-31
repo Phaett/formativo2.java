@@ -13,13 +13,17 @@ class Producto {
         this.precio = precio;
     }
 
-    // Mostrar datos
-    public void mostrarInfo(int cantidad) {
-        System.out.println("=== Detalles del Producto ===");
-        System.out.println("Código: " + codigo);
-        System.out.println("Descripción: " + descripcion);
-        System.out.println("Precio unitario: $" + precio);
-        System.out.println("Cantidad: " + cantidad);
-        System.out.println("Total a pagar: $" + (precio * cantidad));
+    // Getter
+    public int getCodigo() {
+        return codigo;
     }
+    
+    public String getDescripcion() {
+        return descripcion;
+    }
+    
+    public int getPrecio() {
+        return precio;
+    }
+
 }
